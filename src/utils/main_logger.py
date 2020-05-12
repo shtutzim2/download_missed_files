@@ -2,11 +2,11 @@ import logging
 
 # create logger with 'spam_application'
 logger = logging.getLogger('download_missed_files')
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 # create file handler which logs even debug messages
 fh = logging.FileHandler('../main.log', 'w')
 fh.setLevel(logging.DEBUG)
-# create console handler with a higher log level
+# create console handler.
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
 # create formatter and add it to the handlers

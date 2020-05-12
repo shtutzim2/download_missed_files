@@ -8,7 +8,7 @@ from utils.main_logger import logger
 
 # Argument parser.
 parser = argparse.ArgumentParser()
-parser.add_argument("--input", type=str, help="File that contain file names to download.")
+parser.add_argument("--input", type=str, required=True, help="File that contain file names to download.")
 parser.add_argument("--output", type=str, default="../output", help="Folder to save all downloads.")
 
 args = parser.parse_args()
